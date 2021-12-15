@@ -1,0 +1,87 @@
+body {
+  font-size: 115%;
+  font-family: calibri, Ubuntu, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #1e2d76;
+  max-width: 960px;
+  margin: auto;
+}
+
+a {
+  color: inherit;
+}
+
+.langswitch {
+  margin-top: 0.5em;
+}
+
+.langswitch a {
+  text-decoration: none;
+}
+
+.langswitch img {
+  vertical-align: middle;
+}
+
+header div#logo {
+  background: url("/images/microplastic-pieces.jpg");
+  background-position: 0 90%;
+  background-size: cover;
+  height: 150px;
+}
+
+header div#logo h1 {
+  background: white;
+  opacity: 0.9;
+  display: inline-block;
+  padding: 0 1ch;
+}
+
+nav {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+nav a {
+  font-size: 125%;
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  nav {
+    display: block;
+    justify-content: end;
+    align-items: center;
+  }
+  nav h1 {
+    font-size: 150%;
+    background-color: lightseagreen;
+    flex-grow: 1;
+  }
+  nav a {
+    display: block;
+    text-align: left;
+    padding: 8px;
+    text-decoration: none;
+  }
+}
+
+article {
+  padding: 1em;
+  line-height: 1.5;
+}
+
+.langswitch {
+  padding: 4px;
+}
+
+.lang {
+  background-color: orange;
+  display: inline-block;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic3Rkb3V0Iiwic291cmNlcyI6WyJzdHlsZXMuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxBQUFBLElBQUksQ0FBQztFQUNELFNBQVMsRUFBRSxJQUFJO0VBRWYsV0FBVyxFQUFFLCtEQUErRDtFQUM1RSxLQUFLLEVBQUUsT0FBTztFQUdkLFNBQVMsRUFBRSxLQUFLO0VBQ2hCLE1BQU0sRUFBRSxJQUFJO0NBQ2Y7O0FBRUQsQUFBQSxDQUFDLENBQUM7RUFFRSxLQUFLLEVBQUUsT0FBTztDQUNqQjs7QUFFRCxBQUFBLFdBQVcsQ0FBQztFQUNSLFVBQVUsRUFBRSxLQUFLO0NBT3BCOztBQVJELEFBRUksV0FGTyxDQUVQLENBQUMsQ0FBQztFQUNFLGVBQWUsRUFBRSxJQUFJO0NBQ3hCOztBQUpMLEFBS0ksV0FMTyxDQUtQLEdBQUcsQ0FBQztFQUNBLGNBQWMsRUFBRSxNQUFNO0NBQ3pCOztBQUdMLEFBQ0ksTUFERSxDQUNGLEdBQUcsQUFBQSxLQUFLLENBQUM7RUFDTCxVQUFVLEVBQUUsc0NBQXNDO0VBQ2xELG1CQUFtQixFQUFFLEtBQUs7RUFDMUIsZUFBZSxFQUFFLEtBQUs7RUFDdEIsTUFBTSxFQUFFLEtBQUs7Q0FPaEI7O0FBWkwsQUFNUSxNQU5GLENBQ0YsR0FBRyxBQUFBLEtBQUssQ0FLSixFQUFFLENBQUM7RUFDQyxVQUFVLEVBQUUsS0FBSztFQUNqQixPQUFPLEVBQUUsR0FBRztFQUNaLE9BQU8sRUFBRSxZQUFZO0VBQ3JCLE9BQU8sRUFBRSxLQUFLO0NBQ2pCOztBQUtULEFBQUEsR0FBRyxDQUFDO0VBQ0EsT0FBTyxFQUFFLElBQUk7RUFDYixlQUFlLEVBQUUsR0FBRztFQUNwQixXQUFXLEVBQUUsTUFBTTtDQVV0Qjs7QUFiRCxBQUtJLEdBTEQsQ0FLQyxDQUFDLENBQUM7RUFDRSxTQUFTLEVBQUUsSUFBSTtFQUNmLFdBQVcsRUFBRSxJQUFJO0VBQ2pCLE9BQU8sRUFBRSxZQUFZO0VBQ3JCLFVBQVUsRUFBRSxNQUFNO0VBQ2xCLE9BQU8sRUFBRSxJQUFJO0VBQ2IsZUFBZSxFQUFFLElBQUk7Q0FDeEI7O0FBR0wsTUFBTSxtQkFDRjtFQUFBLEFBQUEsR0FBRyxDQUFDO0lBQ0EsT0FBTyxFQUFFLEtBQUs7SUFDZCxlQUFlLEVBQUUsR0FBRztJQUNwQixXQUFXLEVBQUUsTUFBTTtHQWN0QjtFQWpCRCxBQUtJLEdBTEQsQ0FLQyxFQUFFLENBQUM7SUFDQyxTQUFTLEVBQUUsSUFBSTtJQUNmLGdCQUFnQixFQUFFLGFBQWE7SUFDL0IsU0FBUyxFQUFFLENBQUM7R0FDZjtFQVRMLEFBV0ksR0FYRCxDQVdDLENBQUMsQ0FBQztJQUNFLE9BQU8sRUFBRSxLQUFLO0lBQ2QsVUFBVSxFQUFFLElBQUk7SUFDaEIsT0FBTyxFQUFFLEdBQUc7SUFDWixlQUFlLEVBQUUsSUFBSTtHQUN4QjtDQUNKOztBQUdMLEFBQUEsT0FBTyxDQUFDO0VBQ0osT0FBTyxFQUFFLEdBQUc7RUFDWixXQUFXLEVBQUUsR0FBRztDQUNuQjs7QUFDRCxBQUFBLFdBQVcsQ0FBQztFQUNSLE9BQU8sRUFBRSxHQUFHO0NBQ2Y7O0FBRUQsQUFBQSxLQUFLLENBQUM7RUFDRixnQkFBZ0IsRUFBRSxNQUFNO0VBQ3hCLE9BQU8sRUFBRSxZQUFZO0NBQ3hCIn0=  */
