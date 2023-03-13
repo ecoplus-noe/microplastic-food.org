@@ -1,0 +1,326 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 1em;
+}
+
+h1 {
+  text-align: right;
+  margin-right: 2em;
+}
+
+h1 p {
+  display: inline-block;
+  padding: 4px;
+  border: solid 2px #333;
+}
+
+h1 + p {
+  margin-top: 2em;
+}
+
+h1 {
+  margin-top: 2em;
+}
+
+h2 {
+  margin-top: 2em;
+}
+
+a {
+  color: inherit;
+}
+
+body {
+  font-size: 110%;
+  font-family: "SourceSansPro-Regular", Arial;
+  color: #28292e;
+  padding: 4px;
+  padding-top: 0;
+  max-width: 960px;
+  margin: 0 auto;
+  overflow-y: scroll;
+}
+
+.langswitch {
+  display: flex;
+  gap: 0.15em;
+}
+
+.langswitch a {
+  text-decoration: none;
+  padding: 0 2px;
+  border-radius: 3px;
+}
+
+.langswitch .sel {
+  background: #173a53;
+  color: #fff;
+}
+
+.langswitch img {
+  vertical-align: middle;
+}
+
+div#logo {
+  background: url("../images/pic2.jpg");
+  background-position: 0 90%;
+  background-size: cover;
+  height: 150px;
+}
+
+div#logo h1 {
+  background: white;
+  opacity: 0.9;
+  display: inline-block;
+  padding: 0 1ch;
+}
+
+body.forschung div#logo {
+  background: url("../images/pic3.jpg");
+}
+
+body.arbeitsplan div#logo {
+  background: url("../images/pic4.jpg");
+  background-position-y: -82px;
+  background-position-x: -68px;
+}
+
+body.partner div#logo {
+  background: url("../images/pic5.jpg");
+  background-position-y: -111px;
+  background-position-x: 0;
+}
+
+#logonew {
+  background-color: #2d72a3;
+  height: 40px;
+  width: 40px;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  margin-right: 4px;
+  border: none;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  border-top: solid 4px #fff;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav > div {
+  flex-grow: 5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+  gap: 0.2em;
+  color: #fff;
+  background: #2d72a3;
+  padding: 4px;
+}
+
+nav a {
+  color: inherit;
+  display: inline-block;
+  text-align: center;
+  padding: 5px;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+nav a#logonew {
+  border-radius: 0;
+}
+
+nav a:hover {
+  background: #3a8ec9;
+}
+
+nav .alogo {
+  padding: 0;
+}
+
+nav .alogo:hover {
+  opacity: 0.9;
+}
+
+nav a.sel {
+  background: #173a53;
+  color: #fff;
+}
+
+nav span {
+  flex-grow: 5;
+}
+
+article {
+  padding: 0em;
+  line-height: 1.5;
+}
+
+.lang {
+  background-color: orange;
+  display: inline-block;
+}
+
+article.index {
+  margin-top: 4em;
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+  gap: 1.5em;
+}
+
+article.index p.mission {
+  margin: 2em auto 2em auto;
+  text-align: center;
+  font-size: 115%;
+  line-height: 1.2;
+  font-style: italic;
+  max-width: 600px;
+}
+
+article.index section {
+  display: block;
+  padding: 4px;
+}
+
+article.index section.side {
+  padding-top: 4em;
+  font-size: 80%;
+}
+
+article.index section.side h4 {
+  margin: 0;
+}
+
+.logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  justify-items: center;
+  align-items: center;
+  gap: 2em;
+  padding: 2em;
+}
+
+.logos img {
+  width: 140px;
+}
+
+.logos img#ofi {
+  height: 80px;
+}
+
+article.partner img {
+  float: left;
+  height: 40px;
+  margin: 0.5em;
+  margin-right: 1.5em;
+}
+
+article.partner section + section {
+  margin-top: 3em;
+}
+
+article.partner section#ofi img {
+  height: 80px;
+}
+
+article.partner section#leibnitz img {
+  width: 150px;
+}
+
+article.arbeitsplan h2 {
+  margin-top: 1em;
+}
+
+article.arbeitsplan img {
+  margin: 2em auto;
+  display: block;
+  max-width: 100%;
+}
+
+#scrolltop2 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  bottom: 12px;
+  right: 12px;
+}
+
+@media (max-width: 800px) {
+  body {
+    margin: 0;
+    padding-top: 4px;
+  }
+  header {
+    position: initial;
+    border-top: none;
+  }
+  .langswitch {
+    order: -1;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 0.5em;
+  }
+  .langswitch a {
+    border-radius: 0;
+    border: none;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+  nav div {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    background: initial;
+    padding: 0;
+  }
+  nav h1 {
+    font-size: 150%;
+    background-color: lightseagreen;
+    flex-grow: 1;
+  }
+  nav a {
+    display: block;
+    text-align: left;
+    padding: 8px 4px;
+    text-decoration: none;
+    border-bottom: solid 1px #333;
+    color: initial;
+    border-radius: 0;
+  }
+  nav a:not(.sel):hover {
+    background-color: initial;
+  }
+  article.index {
+    display: block;
+  }
+}
