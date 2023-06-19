@@ -46,11 +46,11 @@ a {
 
 body {
   font-size: 110%;
-  font-family: "SourceSansPro-Regular", Arial;
+  font-family: 'SourceSansPro-Regular', Arial;
   color: #28292e;
   padding: 4px;
   padding-top: 0;
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
   overflow-y: scroll;
 }
@@ -179,6 +179,7 @@ nav span {
 
 article {
   padding: 0em;
+  padding-top: 4em;
   line-height: 1.5;
 }
 
@@ -210,11 +211,25 @@ article.index section {
 
 article.index section.side {
   padding-top: 4em;
-  font-size: 80%;
+  font-size: 70%;
 }
 
 article.index section.side h4 {
   margin: 0;
+}
+
+article.index section.side img {
+  width: 140px;
+  display: block;
+}
+
+article.index section.side img#cornet {
+  margin-left: 1em;
+}
+
+article.index section.side div {
+  display: grid;
+  justify-items: center;
 }
 
 .logos {
@@ -234,11 +249,20 @@ article.index section.side h4 {
   height: 80px;
 }
 
+.logos img#ecoplus {
+  height: 60px;
+}
+
 article.partner img {
   float: left;
   height: 40px;
   margin: 0.5em;
   margin-right: 1.5em;
+}
+
+article.partner section#ecoplus img {
+  height: 60px;
+  margin-left: 0;
 }
 
 article.partner section + section {
@@ -251,6 +275,7 @@ article.partner section#ofi img {
 
 article.partner section#leibnitz img {
   width: 150px;
+  margin-left: 0;
 }
 
 article.arbeitsplan h2 {
@@ -285,6 +310,7 @@ article.arbeitsplan img {
     flex-direction: row;
     justify-content: flex-end;
     margin-bottom: 0.5em;
+    font-size: x-large;
   }
   .langswitch a {
     border-radius: 0;
@@ -322,5 +348,13 @@ article.arbeitsplan img {
   }
   article.index {
     display: block;
+  }
+  article.index section.side {
+    font-size: initial;
+  }
+  article.index section.side a {
+    padding: 10px;
+    padding-left: 0;
+    display: inline-block;
   }
 }
