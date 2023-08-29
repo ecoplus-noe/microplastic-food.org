@@ -177,8 +177,7 @@ nav {
 }
 
 article {
-    padding: 0em;
-    padding-top: 4em;
+    // padding: 4em 0;
     line-height: 1.5;
 }
 
@@ -197,7 +196,7 @@ article.index {
         max-width: 600px;
     }
 
-    margin-top: 4em;
+    margin-top: 2em;
     display: grid;
     grid-template-columns: 2.5fr 1fr;
     gap: 1.5em;
@@ -219,6 +218,9 @@ article.index {
         }
         img#cornet {
             margin-left: 1em;
+        }
+        img#ffg {
+            margin-bottom: 1em;
         }
         div {
             display: grid;
@@ -260,7 +262,8 @@ article.partner {
         + section {
             margin-top: 3em;
         }
-        h4 {
+        h3 {
+            font-size: 1.1em;
         }
     }
     section#ofi img {
@@ -283,12 +286,49 @@ article.arbeitsplan {
     }
 }
 
+article.literatur {
+    font-size: medium;
+    margin-top: 4em;
+    h2 {
+        margin-top: 2em;
+    }
+}
+
 #scrolltop2 {
     position: absolute;
     width: 40px;
     height: 40px;
     bottom: 12px;
     right: 12px;
+}
+
+article.impressum {
+    h3 {
+        margin-bottom: 1em;
+    }
+}
+
+article.aktuelles {
+    section {
+        background: white;
+        margin: 1em 0;
+        border: solid 1px $eco-blö;
+        padding: 0.5em;
+    }
+    h4 {
+        font-size: medium;
+        margin-top: 0;
+        margin-bottom: 1em;
+    }
+    img {
+        padding: 1em;
+    }
+    p + p, p + a {
+        margin-top: 1em;
+    }
+    p + a, a + a {
+        display: block;
+    }
 }
 
 @media (max-width: 800px) {
@@ -356,4 +396,11 @@ article.arbeitsplan {
             display: inline-block;
         }
     }
+}
+
+small {
+    display: block;
+    text-align: right;
+    font-size: small;
+    margin-top: 2px;
 }
