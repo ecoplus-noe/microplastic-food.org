@@ -177,7 +177,7 @@ nav {
 }
 
 article {
-    // padding: 4em 0;
+    padding: 0 2em 4em 2em;
     line-height: 1.5;
 }
 
@@ -196,14 +196,13 @@ article.index {
         max-width: 600px;
     }
 
-    margin-top: 2em;
     display: grid;
     grid-template-columns: 2.5fr 1fr;
     gap: 1.5em;
 
     section {
-        display: block;
-        padding: 4px;
+        // display: block;
+        // padding: 4px;
     }
 
     section.side {
@@ -287,8 +286,6 @@ article.arbeitsplan {
 }
 
 article.literatur {
-    font-size: medium;
-    margin-top: 4em;
     h2 {
         margin-top: 2em;
     }
@@ -323,10 +320,12 @@ article.aktuelles {
     img {
         padding: 1em;
     }
-    p + p, p + a {
+    p + p,
+    p + a {
         margin-top: 1em;
     }
-    p + a, a + a {
+    p + a,
+    a + a {
         display: block;
     }
 }
@@ -404,3 +403,22 @@ small {
     font-size: small;
     margin-top: 2px;
 }
+
+section  h3 {
+    margin-top: 0;
+}
+
+article {
+    margin-top: 4em;
+}
+
+// section {
+//     outline: solid 1px lightcoral;
+// }
+// article {
+//     outline: solid 1px lightseagreen;
+//     background: lightgray;
+// }
+// h3 {
+//     outline: solid 1px lightsalmon;
+// }
