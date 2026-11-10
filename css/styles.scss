@@ -221,6 +221,9 @@ article.index {
         img#ffg {
             margin-bottom: 1em;
         }
+        img#dlr {
+            margin-bottom: 1em;
+        }
         div {
             display: grid;
             justify-items: center;
@@ -243,6 +246,10 @@ article.index {
     }
     img#ecoplus {
         height: 60px;
+    }
+    img#lva {
+        width: auto;
+        height: 70px;
     }
 }
 
@@ -272,6 +279,14 @@ article.partner {
         height: 62px;
         margin-left: 0;
     }
+    section#lva img {
+        height: 60px;
+    }
+}
+
+article.arbeitsplan p + p,
+article.forschung p + p {
+    margin-top: 0.75em;
 }
 
 article.arbeitsplan {

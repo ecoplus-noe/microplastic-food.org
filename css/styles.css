@@ -224,6 +224,10 @@ article.index section.side img#ffg {
   margin-bottom: 1em;
 }
 
+article.index section.side img#dlr {
+  margin-bottom: 1em;
+}
+
 article.index section.side div {
   display: grid;
   justify-items: center;
@@ -248,6 +252,11 @@ article.index section.side div {
 
 .logos img#ecoplus {
   height: 60px;
+}
+
+.logos img#lva {
+  width: auto;
+  height: 70px;
 }
 
 article.partner img {
@@ -277,6 +286,15 @@ article.partner section#ofi img {
 article.partner section#leibnitz img {
   height: 62px;
   margin-left: 0;
+}
+
+article.partner section#lva img {
+  height: 60px;
+}
+
+article.arbeitsplan p + p,
+article.forschung p + p {
+  margin-top: 0.75em;
 }
 
 article.arbeitsplan h2 {
